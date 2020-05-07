@@ -1,0 +1,37 @@
+{ "name": "terminal-color-numbers",
+  "version": "0.1.0",
+  "description": "Named raw terminal color palette for the linux virtual console and lots of terminal emulators. No open/close/nesting or state machine. Just the numbers, and some minimal utility functions.",
+  "keywords": [
+    "ansi",
+    "color",
+    "colors",
+    "name",
+    "named",
+    "names",
+    "terminal"
+  ],
+
+  "author": "M.K. (https://github.com/mk-pmb)",
+  "homepage": "https://github.com/mk-pmb/terminal-color-numbers-js/#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mk-pmb/terminal-color-numbers-js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mk-pmb/terminal-color-numbers-js/issues"
+  },
+  "contributors": [],
+
+  "private": false, "license": "ISC",
+
+  "main": "tcn.js",
+  "scripts": { "test": "nodejs test/all.js" },
+  "directories": { "test": "test" },
+
+  "dependencies": {},
+  "devDependencies": {
+  },
+
+
+  "npm vs. BOM = Unexpected token": "-*- coding: UTF-8 -*-"
+}
