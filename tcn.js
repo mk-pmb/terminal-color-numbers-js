@@ -6,7 +6,7 @@ var EX;
 
 function lookupOneStyle(s) {
   var n = EX.styleNums[s];
-  return (Number.isFinite(n) ? n : '');
+  return (Number.isFinite(n) ? n : false);
 }
 EX = lookupOneStyle;
 
@@ -33,12 +33,12 @@ function reys(spec) {
 
 EX.colorColumns = [
   { d: 'black', b: reys('darkG dimG dim') },
-  { c: 'red', },
-  { c: 'green', },
-  { c: 'yellow', },
-  { c: 'blue', },
-  { c: 'purple violet', },
-  { c: 'cyan turquoise', },
+  { c: 'red' },
+  { c: 'green' },
+  { b: 'yellow', d: 'orange brown' },
+  { c: 'blue' },
+  { c: 'purple violet' },
+  { b: 'cyan', c: 'turquoise', d: 'teal' },
   { d: reys('brG G'), b: 'white' },
 ];
 

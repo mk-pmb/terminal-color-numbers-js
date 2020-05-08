@@ -19,6 +19,16 @@ same(tcn('brgreen'), 92);   // br… = bright
 same(tcn('bggreen'), 42);   // bg… = background
 same(tcn('bgbrgreen'), 102);
 
+same(tcn('brown'), 33);
+same(tcn('brbrown'), false);
+same(tcn('yellow'), 93);
+same(tcn('bryellow'), false);
+
+same(tcn('cyan'), 96);
+same(tcn('brturquoise'), 96);
+same(tcn('turquoise'), 36);
+same(tcn('teal'), 36);
+
 same(tcn('grey'), 37);
 same(tcn('gray'), 37);
 same(tcn('brgray'), 37);
@@ -36,9 +46,9 @@ same(tcn.names(97), ['white']);
 same(tcn.esc(), '');
 same(tcn.esc(''), '');
 same(tcn.esc('reset'), '\u001B[0m');
-same(tcn.esc('blueish'), '');   // unknown words are ignored
-same(tcn.esc('bryellow bgred'),         '\u001B[93;41m');
-same(tcn.esc('bryellow blueish bgred'), '\u001B[93;41m');
+same(tcn.esc('air'), '');   // unknown words are ignored
+same(tcn.esc('yellow bgred'),         '\u001B[93;41m');
+same(tcn.esc('yellow air bgred'),     '\u001B[93;41m');
 // ¦mjsUsageDemo¦-
 
 
