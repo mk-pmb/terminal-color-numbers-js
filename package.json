@@ -25,11 +25,13 @@
   "private": false, "license": "ISC",
 
   "main": "tcn.js",
-  "scripts": { "test": "nodejs test/all.js" },
+  "scripts": { "test": "nodemjs test/usage.mjs" },
   "directories": { "test": "test" },
 
   "dependencies": {},
   "devDependencies": {
+    "nodemjs": "^0.1.8",
+    "p-fatal": "^0.1.2"
   },
 
 

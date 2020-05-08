@@ -1,26 +1,15 @@
-﻿
-<!--#echo json="package.json" key="name" underline="=" -->
-terminal-color-numbers
-======================
-<!--/#echo -->
+// -*- coding: utf-8, tab-width: 2 -*-
 
-<!--#echo json="package.json" key="description" -->
-Named raw terminal color palette for the linux virtual console and lots of
-terminal emulators. No open/close/nesting or state machine. Just the numbers,
-and some minimal utility functions.
-<!--/#echo -->
+import 'p-fatal';
+import assert from 'assert';
 
+// ¦mjsUsageDemo¦+
+import tcn from '..';
+// ¦mjsUsageDemo¦- importPkgName
 
+const same = assert.deepStrictEqual;
 
-Usage
------
-
-from [test/usage.js](test/usage.js):
-
-<!--#include file="test/usage.mjs" transform="mjsUsageDemo1802" -->
-<!--#verbatim lncnt="31" -->
-```javascript
-import tcn from 'terminal-color-numbers';
+// ¦mjsUsageDemo¦+
 // simple style lookup: name to number
 same(tcn('reset'), 0);
 same(tcn('bold'), 1);
@@ -49,29 +38,12 @@ same(tcn.esc('reset'), '\u001B[0m');
 same(tcn.esc('blueish'), '');   // unknown words are ignored
 same(tcn.esc('bryellow bgred'),         '\u001B[93;41m');
 same(tcn.esc('bryellow blueish bgred'), '\u001B[93;41m');
-```
-<!--/include-->
+// ¦mjsUsageDemo¦-
 
 
 
 
-<!--#toc stop="scan" -->
 
 
 
-Known issues
-------------
-
-* Needs more/better tests and docs.
-
-
-
-
-&nbsp;
-
-
-License
--------
-<!--#echo json="package.json" key=".license" -->
-ISC
-<!--/#echo -->
+console.info('+OK basics test passed.');
