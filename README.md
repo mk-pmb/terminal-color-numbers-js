@@ -1,7 +1,7 @@
 ﻿
 <!--#echo json="package.json" key="name" underline="=" -->
-terminal-color-numbers
-======================
+terminal-color-numbers-pmb
+==========================
 <!--/#echo -->
 
 <!--#echo json="package.json" key="description" -->
@@ -15,12 +15,13 @@ and some minimal utility functions.
 Usage
 -----
 
-from [test/usage.js](test/usage.js):
+from [test/usage.mjs](test/usage.mjs):
 
 <!--#include file="test/usage.mjs" transform="mjsUsageDemo1802" -->
-<!--#verbatim lncnt="31" -->
+<!--#verbatim lncnt="32" -->
 ```javascript
-import tcn from 'terminal-color-numbers';
+import tcn from 'terminal-color-numbers-pmb';
+
 // simple style lookup: name to number
 same(tcn('reset'), 0);
 same(tcn('bold'), 1);

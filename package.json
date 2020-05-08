@@ -1,4 +1,4 @@
-{ "name": "terminal-color-numbers",
+{ "name": "terminal-color-numbers-pmb",
   "version": "0.1.0",
   "description": "Named raw terminal color palette for the linux virtual console and lots of terminal emulators. No open/close/nesting or state machine. Just the numbers, and some minimal utility functions.",
   "keywords": [
@@ -12,13 +12,13 @@
   ],
 
   "author": "M.K. (https://github.com/mk-pmb)",
-  "homepage": "https://github.com/mk-pmb/terminal-color-numbers-js/#readme",
+  "homepage": "https://github.com/mk-pmb/terminal-color-numbers-pmb-js/#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mk-pmb/terminal-color-numbers-js.git"
+    "url": "git+https://github.com/mk-pmb/terminal-color-numbers-pmb-js.git"
   },
   "bugs": {
-    "url": "https://github.com/mk-pmb/terminal-color-numbers-js/issues"
+    "url": "https://github.com/mk-pmb/terminal-color-numbers-pmb-js/issues"
   },
   "contributors": [],
 

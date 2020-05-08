@@ -10,6 +10,7 @@ import tcn from '..';
 const same = assert.deepStrictEqual;
 
 // ¦mjsUsageDemo¦+
+
 // simple style lookup: name to number
 same(tcn('reset'), 0);
 same(tcn('bold'), 1);
